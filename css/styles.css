@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Hind', sans-serif;
 }
 
 
@@ -28,6 +28,7 @@
     'GRAD' 0,
     'opsz' 24;
     color: var(--symbols-color);
+    cursor: pointer;
 }
 
 .material-symbols-outlined:hover{
@@ -71,6 +72,9 @@
     padding: 10px;
 }
 
+.nav-top{
+    align-items: center;
+}
 
 .nav-top img{
     height: 40px;
@@ -98,7 +102,6 @@
     display: flex;
     flex-direction: column;
     gap:48px;
-    /* margin-left: 25%; */
     position: relative;
     top: 15%;
     left: 75%;
@@ -111,7 +114,6 @@
 /* main body */
 
 .content{
-    float: left;
     width: 100%;
 }
 
@@ -126,11 +128,12 @@ iframe{
 }
 
 
+
 /* home */
 
-.heading{
+div.heading{
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     justify-content: space-between;
     padding: 10px 0px;
 }
@@ -141,20 +144,6 @@ iframe{
     font-size: 12px;
 }
 
-.see-all{
-    border-radius: 25px;
-}
-
-
-.see-all:hover{
-    background-color: var(--primary-color);
-}
-
-.arrow{
-    font-size: 14px; 
-    position: relative; 
-    bottom: -2px;
-}
 
 .item-caption{
     color: white;
@@ -174,15 +163,17 @@ iframe{
 .flex-items figure img{
     width: 158.69px;
     height: 231.612px;
-    border-radius: 15px;
+    border-radius: 20px;
     object-fit:  cover;
+
     
 }
 
 .flex-items figure img.yt{
     width: 158.69px;
     height: 158.69px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    background-color: transparent;
 }
 
 
