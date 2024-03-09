@@ -203,11 +203,6 @@ div.heading{
     position: sticky;
     top: 0;
     height: 50px;
-    /* background-color: aqua; */
-    /* display: none; */
-    /* background-color: red; */
-    z-index: 1;
-    backface-visibility: hidden ;
 }
 
 .selectbar select{
@@ -225,7 +220,6 @@ div.heading{
 .grid-container{
     display: grid; 
     grid-template-columns: auto auto auto auto auto auto auto;
-    overflow: hidden;
 }
 
 .grid-items figure img{
@@ -235,6 +229,10 @@ div.heading{
 
 .center{
     justify-content: center;
+}
+
+.bg{
+    background: linear-gradient(41deg, #110f21 0%, var(--background-color-2) 100%);
 }
 
 /* video library */
@@ -256,7 +254,7 @@ div.heading{
     margin: 15px;
 }
 
-.library-items button{
+.btn{
     color: white;
     background-color: #22b365;
     border: none;
@@ -264,20 +262,36 @@ div.heading{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 50%;
-    /* margin: 10px; */
     border-radius: 100px;
     outline: 2px solid #22b365;
     outline-offset: -1px;
 }
 
-.library-items button:hover{
+.btn:hover{
     background-color: transparent;
-    
-
 }
 
 
+
 /* addons */
+
+
+.search .addonsbar{
+    margin: 0;
+    width: 200px;
+    height: 40px;
+}
+
+.search .addonsbtn {
+    margin: 0;
+    padding: 4px;
+}
+
+.search .addonsbtn .material-symbols-outlined{
+    margin: 0;
+    top: 10%;
+    bottom: 10%;
+}
 
 
 
