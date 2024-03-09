@@ -49,7 +49,6 @@
 
 }
 
-
 .search .searchbar{
     width: 350px;
     padding: 15px;
@@ -271,10 +270,7 @@ div.heading{
     background-color: transparent;
 }
 
-
-
 /* addons */
-
 
 .search .addonsbar{
     margin: 0;
@@ -412,7 +408,6 @@ div.heading{
     outline: 2px solid white;
     outline-offset: -2px;
 }
-
 
 #general .settings-lower section ul li{
     list-style-type: none;
