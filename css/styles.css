@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Hind', sans-serif;
     scrollbar-width: none;
+    user-select: none;
 }
 
 /* variables */
@@ -201,7 +202,7 @@ div.heading{
     height: 50px;
 }
 
-.selectbar select{
+.selectbar select , .selectbtn{
     background-color: var(--primary-color);
     border: none;
     border-radius: 50px;
@@ -375,3 +376,81 @@ div.heading{
 }
 
 /* settings */
+
+.pfp{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.pfp #profilepic{
+    width: 90px;
+    background-color: #d3d2d6;
+    border: 2px solid #7053e0;
+    border-radius: 100px;
+}
+
+.pfp #username{
+    font-size: larger;
+    color: #a4a3ac;
+    cursor:  default;
+}
+
+.lgn-btn{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 100px;
+    padding: 0.75rem 10rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn .lgn-btn:hover{
+    background-color: transparent;
+    outline: 2px solid white;
+    outline-offset: -2px;
+}
+
+
+#general .settings-lower section ul li{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+#general .settings-lower section ul li a{
+    color: #7255e4;
+    text-decoration: none;
+}
+
+.section-heading{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+.trakt, .ui-lang{
+    justify-content: flex-start;
+    gap: 10%;
+    padding-top: 16px;
+}
+
+.trakt-icon{
+        color: #ed2224;
+        height: 3rem;
+        width: 3rem;
+}
+
+.trakt-logo, .ui-text{
+    align-self: center;
+    color: white;
+}
+
+.ath-btn{
+    background-color: #171627;
+    color: #7e7d88;
+    padding: 0.5rem 3.75rem;
+    cursor: default;
+}
