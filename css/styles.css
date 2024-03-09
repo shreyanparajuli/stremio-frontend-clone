@@ -11,7 +11,6 @@
     scrollbar-width: none;
 }
 
-
 /* variables */
 
 :root{
@@ -20,7 +19,6 @@
     --background-color-2: #1a173e;
     --symbols-color: #494861;
 }
-
 
 /* google icons */
 
@@ -37,7 +35,6 @@
     color: white;
     transition: color 0.3s ease-in-out;
 }
-
 
 /* nav bar */
 
@@ -218,7 +215,10 @@ div.heading{
 }
 
 .grid-container{
-    display: grid; 
+    display: grid;    
+}
+
+.grid-explore{
     grid-template-columns: auto auto auto auto auto auto auto;
 }
 
@@ -293,6 +293,85 @@ div.heading{
     bottom: 10%;
 }
 
+.flex-addons{
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+}
 
+.addons-left{
+    display: flex;
+    gap: 10px;
+}
+
+
+.flex-container .addons-items{
+    background-color: var(--primary-color);
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.svg .plugin-icon {
+    max-width: 150px;
+    min-width: 150px;
+	display: block;
+	height: 100%;
+    padding: 30px;
+	width: 100%;
+}
+
+.addons-text{
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.addons-text .addons-name{
+    font-size: 24px;
+}
+
+.addons-text .addons-version{
+    color: #9897a0;
+    font-size: 0.6em;
+}
+
+.addons-text .addons-category{
+    font-size: 16px;
+    color: #6c6b77;
+}
+
+.addons-buttons{
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.addons-buttons .adn-uninstall{
+    background-color: transparent;
+    border: 2px solid #5f5e73;
+    padding: 0.5em 5em;
+    color: #5f5e73;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.addons-buttons .adn-uninstall:hover{
+    border-color: white;
+    color: white;
+}
+
+.addons-buttons .share-adn{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.addons-buttons .share-adn:hover{
+    text-decoration: underline;
+}
 
 /* settings */
