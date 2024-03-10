@@ -1,0 +1,10 @@
+@media screen and (max-width: 660px) {
+    .search{
+        display: none;
+    }
+    .sidebar-items ul li a .material-symbols-outlined{
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+}
