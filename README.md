@@ -1,1 +1,3 @@
-# WIP
+# STREMIO FRONTEND WITH HTML/CSS
+
+## Work in Progress
