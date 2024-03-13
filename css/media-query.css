@@ -7,4 +7,16 @@
         height: 24px;
         font-size: 24px;
     }
+
+    .grid-explore{
+        grid-template-columns: auto;
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+
+    .grid-explore{
+        grid-template-columns: auto auto auto;
+    }
 }
