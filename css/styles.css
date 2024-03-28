@@ -21,6 +21,15 @@
     display: flex;
 }
 
+.flex-columns{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-top{
     justify-content: space-between;
     padding: 15px;
@@ -74,7 +83,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .top-nav-items ul{
     list-style-type: none;
-    flex-direction: row;
     display: flex;
     gap: 25px;
 }
@@ -267,7 +275,6 @@ div.heading{
     background-color: var(--primary-color);
     gap: 5px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border-radius: 10px;
     width: 100%;
@@ -413,4 +420,9 @@ div.heading{
     color: #7e7d88;
     padding: 0.5rem 3.75rem;
     cursor: default;
+}
+
+
+.login-gap{
+    gap:64px;
 }
