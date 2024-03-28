@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 /* universal */
 
 *{
@@ -11,16 +11,13 @@
     user-select: none;
 }
 
-/* variables */
-
 :root{
     --primary-color: rgba(255,255,255,0.07);
     --background-color-1: #0c0b11;
     --background-color-2: #1a173e;
     --symbols-color: #494861;
+    --btn-clr: #22b365;
 }
-
-/* google icons */
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -29,15 +26,14 @@
     'GRAD' 0,
     'opsz' 24;
     color: var(--symbols-color);
-    cursor: pointer;
 }
+
 .material-symbols-outlined:hover{
     color: white;
-    transition: color 0.1s ease-in;
+    transition: color 0.15s ease-in;
 }
 
 /* nav bar */
-
 .flex-container{
     display: flex;
 }
@@ -97,8 +93,6 @@
     gap: 25px;
 }
 
-/*sidebar*/
-
 .sidebar{
     width: 65px;
     display: flex;
@@ -110,19 +104,18 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap:48px;
+    justify-content: center;
+    gap:32px;
     position: relative;
-    top: 15%;
-    bottom: 75%;
+    top: 10%;
 }
+    
 
 .sidebar-items ul li a .material-symbols-outlined{
     width: 32px;
     height: 32px;
     font-size: 32px;
 }
-
-/* main body */
 
 .content{
     width: 100%;
@@ -133,14 +126,6 @@ iframe{
     height: 100%;
     border: none;
 }
-
-.active{
-    color: blue;
-}
-
-
-
-/* home */
 
 div.heading{
     color: white;
@@ -189,15 +174,10 @@ div.heading{
 .flex-items figure:hover img:hover, .grid-items figure:hover img:hover{
     outline: 4px solid white;
     outline-offset: -4px;
-    overflow:hidden;
     object-fit: cover;
-    object-position: center;  
-    overflow: hidden;
+    object-position: center;
     transition: transform 0.1s ease-in;
 }
-
-
-/* explore */
 
 .selectbar{
     gap: 14px;
@@ -235,8 +215,6 @@ div.heading{
     background: linear-gradient(41deg, #110f21 0%, var(--background-color-2) 100%);
 }
 
-/* video library */
-
 .library-items{
     align-self: center;
     text-align: center;
@@ -258,22 +236,20 @@ div.heading{
 
 .btn{
     color: white;
-    background-color: #22b365;
+    background-color: var(--btn-clr);
     border: none;
     padding: 0.75rem 7.5rem;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 50%;
     border-radius: 100px;
-    outline: 2px solid #22b365;
+    outline: 2px solid var(--btn-clr);
     outline-offset: -1px;
 }
 
 .btn:hover{
     background-color: transparent;
 }
-
-/* addons */
 
 .search .addonsbar{
     margin: 0;
@@ -302,7 +278,6 @@ div.heading{
     display: flex;
     gap: 10px;
 }
-
 
 .flex-container .addons-items{
     background-color: var(--primary-color);
@@ -373,8 +348,6 @@ div.heading{
     text-decoration: underline;
     cursor: pointer;
 }
-
-/* settings */
 
 .pfp{
     display: flex;
@@ -456,4 +429,28 @@ div.heading{
     color: #7e7d88;
     padding: 0.5rem 3.75rem;
     cursor: default;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 660px) {
+    .search{
+        display: none;
+    }
+    .sidebar-items ul li a .material-symbols-outlined{
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+
+    .grid-explore{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .grid-explore{
+        grid-template-columns: auto auto auto;
+    }
 }
